@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="GCSE Study Resources",
-    page_icon="https://emojis.wiki/books/",
+    page_icon="📚",
 )
 
 PALETTE = {
@@ -83,20 +83,36 @@ st.markdown(
     unsafe_allow_html=True
 )
 st.write("Welcome! You have found the website with all the GCSE revision resources for most subjects. Here you will find not only notes but also past papers and key examiner reports you can make full use of. This website is full designed in order for any student to achieve a grade 9. The website contains all trusted materials which will be of use to every student. It also contains the grade boundaries of any past papers that you may have completed so that you can check where you stand. Overall I hope you find this as helpful as I do and use it to full extent. Enjoy!")
-st.sidebar.title("Subjects")
-st.sidebar.write("This contiains all the subjects available! Just click to find all the resources.")
-st.sidebar.button("Chemistry", width=100000)
-st.sidebar.button("Physics", width=100000)
-st.sidebar.button("Biology", width=100000)
-st.sidebar.button("Maths", width=100000)
-st.sidebar.button("English", width=100000)
-st.sidebar.button("German", width=100000)
-st.sidebar.button("Computer Science", width=100000)
-st.sidebar.button("Geography", width=100000)
-st.sidebar.button("Economics", width=100000)
-st.sidebar.button("Religous Studies", width=100000)
-st.sidebar.button("Further Maths", width=100000)
-st.sidebar.title("Home Redirect")
-st.sidebar.write("Hope you find this useful and if you want to direct back the the home page press the button below. Thanks!")
-st.sidebar.button("Home", width=100000)
+st.set_page_config(page_title="GCSE Study Resource")
+st.markdown("""
+        <style>
+            [data-testid="stSidebarNav"] {
+                display: none;
+            }
+        </style>
+""", unsafe_allow_html=True)
+st.sidebar.title("**Subjects**")
+st.sidebar.write("This contains all the subjects available! Just click to find all the resources")
+if st.sidebar.button("Religious Studies", width=100000):
+    st.switch_page("pages/Religious-Studies.py")
+if st.sidebar.button("Biology", width=100000):
+    st.switch_page("pages/Biology.py")
+if st.sidebar.button("Chemistry", width=100000):
+    st.switch_page("pages/Chemistry.py")
+if st.sidebar.button("Physics", width=100000):
+    st.switch_page("pages/Physics.py")
+if st.sidebar.button("Economics", width=100000):
+    st.switch_page("pages/Economics.py")
+if st.sidebar.button("Geography", width=100000):
+    st.switch_page("pages/Geography.py")
+if st.sidebar.button("German", width=100000):
+    st.switch_page("pages/German.py")
+if st.sidebar.button("Maths", width=100000):
+    st.switch_page("pages/Maths.py")
+if st.sidebar.button("English", width=100000):
+    st.switch_page("pages/English.py")
+if st.sidebar.button("Computer Science", width=100000):
+    st.switch_page("pages/Computer-Science.py")
+if st.sidebar.button("Further Maths", width=100000):
+    st.switch_page("pages/Further-Maths.py")
 st.set_page_config(layout="wide")
