@@ -2,6 +2,18 @@ import streamlit as st
 import base64
 import os
 
+st.title("DEBUG INFO")
+st.write("**Current directory:**", os.getcwd())
+st.write("**Files in root:**", os.listdir("."))
+
+if os.path.exists("pdfs_religious_studies"):
+    st.write("**✅ pdfs_religious_studies folder EXISTS**")
+    st.write("**Files inside:**", os.listdir("pdfs_religious_studies"))
+else:
+    st.write("**❌ pdfs_religious_studies folder NOT FOUND**")
+
+st.markdown("---")
+
 st.set_page_config(
     page_title="GCSE Study Resources",
     page_icon="https://emojis.wiki/books/",
@@ -122,18 +134,6 @@ st.sidebar.write("Press this button to go back to the home page. Thanks for visi
 if st.sidebar.button("Home", width=100000):
     st.switch_page("app.py")
 st.set_page_config(layout="wide")
-
-st.title("DEBUG INFO")
-st.write("**Current directory:**", os.getcwd())
-st.write("**Files in root:**", os.listdir("."))
-
-if os.path.exists("pdfs_religious_studies"):
-    st.write("**✅ pdfs_religious_studies folder EXISTS**")
-    st.write("**Files inside:**", os.listdir("pdfs_religious_studies"))
-else:
-    st.write("**❌ pdfs_religious_studies folder NOT FOUND**")
-
-st.markdown("---")
 
 def display_pdf(file_path):
     """Display PDF in Streamlit"""
