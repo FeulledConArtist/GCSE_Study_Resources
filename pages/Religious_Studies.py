@@ -135,11 +135,11 @@ if 'selected_pdf' not in st.session_state:
     st.session_state.selected_pdf = None
 
 if st.button("June 2024 Section 1: Buddhism", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.bub.pdf"
+    st.session_state.selected_pdf = "../pdfs/re.bub.pdf"
 if st.button("June 2024 Section 2: Christianity", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.chri.pdf"
+    st.session_state.selected_pdf = "../pdfs/re.chri.pdf"
 if st.button("June 2024 Section 5: Thematics", width=110000):
-    st.session_state.selected_pdf = ("pdfs/re.the.pdf")
+    st.session_state.selected_pdf = ("../pdfs/re.the.pdf")
 
 st.markdown(
     '<h2 class="float-title">2024 Mark Schemes</h2>',
@@ -147,11 +147,11 @@ st.markdown(
 )
 
 if st.button("June 2024 Mark Scheme: Buddhism", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.bms.pdf"
+    st.session_state.selected_pdf = "../pdfs/re.bms.pdf"
 if st.button("June 2024 Mark Scheme: Christianity", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.chms.pdf"
+    st.session_state.selected_pdf = "../pdfs/re.chms.pdf"
 if st.button("June 2024 Mark Scheme: Thematics", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.tms.pdf"
+    st.session_state.selected_pdf = "../pdfs/re.tms.pdf"
 
 if st.session_state.selected_pdf:
     display_pdf(st.session_state.selected_pdf)
