@@ -116,3 +116,26 @@ if st.sidebar.button("Computer Science", width=100000):
 if st.sidebar.button("Further Maths", width=100000):
     st.switch_page("pages/Further_Maths.py")
 st.set_page_config(layout="wide")
+
+if st.button("Religious Studies", width=100000):
+    st.switch_page("pages/Religious_Studies.py")
+if st.button("Biology", width=100000):
+    st.switch_page("pages/Biology.py")
+if st.button("Chemistry", width=100000):
+    st.switch_page("pages/Chemistry.py")
+if st.button("Physics", width=100000):
+    st.switch_page("pages/Physics.py")
+if st.button("Economics", width=100000):
+    st.switch_page("pages/Economics.py")
+if st.button("Geography", width=100000):
+    st.switch_page("pages/Geography.py")
+if st.button("German", width=100000):
+    st.switch_page("pages/German.py")
+if st.button("Maths", width=100000):
+    st.switch_page("pages/Maths.py")
+if st.button("English", width=100000):
+    st.switch_page("pages/English.py")
+if st.button("Computer Science", width=100000):
+    st.switch_page("pages/Computer_Science.py")
+if st.button("Further Maths", width=100000):
+    st.switch_page("pages/Further_Maths.py")

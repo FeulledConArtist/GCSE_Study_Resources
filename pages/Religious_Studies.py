@@ -82,7 +82,7 @@ st.markdown(
     '<h1 class="float-title">Religious Studies</h1>',
     unsafe_allow_html=True
 )
-st.write("Welcome! Here you will find all the material needed to ace your religious studies exam. All  the resources uploaded has helped me get a grade 9 so you can fully rely on them. Thanks for trusting us with your revision and hopefully you benefit from these resources. This is for **AQA Religious Studies Short Course!**")
+st.write("Welcome! Here you will find all the material needed to ace your religious studies exam. All  the resources uploaded has helped me get a grade 9 so you can fully rely on them. Thanks for trusting us with your revision and hopefully you benefit from these resources.")
 st.set_page_config(page_title="GCSE Study Resource")
 st.markdown("""
         <style>
@@ -122,7 +122,7 @@ if st.sidebar.button("Home", width=100000):
 st.set_page_config(layout="wide")
 
 st.markdown(
-    '<h2 class="float-title">Religious Studies Exam Boards</h2>',
+    '<h2 class="float-title">Religion Studies Exam Boards</h2>',
     unsafe_allow_html=True
 )
 if st.button("AQA (Short Course)",width=110000):
